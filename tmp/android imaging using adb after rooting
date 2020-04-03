@@ -1,0 +1,15 @@
+https://developer.android.com/studio/releases/platform-tools.html
+                            // 자신의 OS에 맞는 SDK 플랫폼 도구 다운
+
+고급시스템설정 -> 고급 -> 환경 변수 -> 시스템 변수의 Path에 adb.exe 위치 설정
+
+[cmd]
+adb devices                 // 디바이스 접속 확인
+    -> unauthorized가 나타나면 해당 기기의 드라이버 설치 (문구만 띄워주자)
+adb shell                   // 디바이스 shell 창
+
+[adb shell]
+cat /proc/partitions        // partitions 확인
+su                          // root 권한 설정
+mount -o remount,rw /       // read-only 문제 방지
+dd if=/dev/block/mmcblk0 of=/sdcard/test.img // if=input_path, of=output_path

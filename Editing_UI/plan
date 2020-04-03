@@ -1,0 +1,9 @@
+<finish>
+화면 1, 화면 2와 연동.
+ui_testcode_01.py  완성 // 수정 필요 없음
+ui_testcode_02.py 완성 // ui_testcode_02_1 이 완성시 연동 작업 필요
+
+
+<todo>
+ui_testcode_02_1.py 완성 후 ui_testcode_02.py 와 연동
+createdump.py // 실행시 덤프 파일을 떠주는 코드 제작
